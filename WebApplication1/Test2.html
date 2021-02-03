@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+        * {
+          padding:0;
+          margin:0;
+        }
+        .logo-div {
+            width: 320px;
+            margin: auto auto 20px;
+            padding-top:10px;
+        }
+            .logo-div img {
+                width: 240px;
+                height: 60px;
+                margin: auto;
+                display: block
+            }
+        .big-div {
+            border: 1px solid #d9d9d9;
+            margin: auto;
+            width: 320px;
+            padding-bottom: 20px;
+        }
+        .fix-width {
+            width: 320px;
+            margin: auto;
+            line-height: 50px;
+        }
+        .label-div {
+            width: 250px;
+            margin: auto;
+            text-align: left;
+        }
+        .txtInput {
+            width: 250px;
+            border: 1px solid #d9d9d9;
+            height: 25px;
+            display:block;
+            margin:auto;
+            outline:none;
+            padding:0 5px;
+        }
+        #btnSubmit {
+            width: 120px;
+            height: 30px;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: green;
+            margin: 40px auto 20px;
+            display: block;
+            border-radius: 3px;
+        }
+        .copy-right {
+            background-color: #38383c;
+            width: 320px;
+            color: white;
+            margin: auto;
+            font-size: 14px;
+            padding: 10px 0;
+            border: 1px solid #38383c;
+        }
+        .copy-right-div {
+            width: 250px;
+            margin: auto;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-div">
+        <img src="Images/whitelogo.png" />
+    </div>
+    <div class="big-div">
+        <div class="fix-width">
+            <div class="label-div">公司名称：</div>
+            <input type="text" id="txtCompanyName" class="txtInput" autocomplete="off" />
+        </div>
+        <div class="fix-width">
+            <div class="label-div">姓名：</div>
+            <input type="text" id="txtName" class="txtInput" autocomplete="off" />
+        </div>
+        <div class="fix-width">
+            <div class="label-div">验证码：</div>
+            <input type="text" id="txtValiCode" class="txtInput" autocomplete="off" />
+        </div>
+        <div class="fix-width">
+            <div class="label-div">推荐人：</div>
+            <input type="text" id="txtRecommender" class="txtInput" autocomplete="off" />
+        </div>
+        <div class="fix-width">
+            <div class="label-div">邮箱：</div>
+            <input type="text" id="txtEmail" class="txtInput" autocomplete="off" />
+        </div>
+        <div class="fix-width">
+            <div class="label-div">电话：</div>
+            <input type="text" id="txtPhone" class="txtInput" autocomplete="off" />
+        </div>
+        <div class="fix-width">
+            <div class="label-div">地址：</div>
+            <input type="text" id="txtAddress" class="txtInput" autocomplete="off" />
+        </div>
+        <div class="fix-width">
+            <div class="label-div">性别：</div>
+            <input type="text" id="txtSex" class="txtInput" autocomplete="off" />
+        </div>
+        <div class="fix-width">
+            <input type="button" id="btnSubmit" value="提交" />
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="copy-right-div">
+            <strong>公司名称：上海爱诺琳商贸有限公司</strong>
+        </div>
+        <div class="copy-right-div">
+            电话：021-3399868
+        </div>
+        <div class="copy-right-div">
+            邮箱：AiNuoLin@NewLife.Com
+        </div>
+        <div class="copy-right-div">
+            地址：上海市闵行区虹莘路3999号MT2办公楼3楼
+        </div>
+    </div>
+</body>
+</html>

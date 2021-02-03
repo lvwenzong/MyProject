@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        #div0 {
+            border: 1px solid pink;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+           
+        }
+      
+        .txtInput {
+            width: 350px;
+            height: 35px;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            padding: 0 15px;
+        }
+        .flexClass {
+            display: inline-flex;
+            justify-content: center;/*横向对齐方式*/
+            align-items:center;/*纵向对齐方式*/
+            flex-direction: row;/*子元素横向排列还是纵向排列*/
+            flex-basis:80px;/*纵向间隔*/
+
+            flex-grow:0;
+            flex-shrink:1;
+           
+        }
+
+        input:focus {
+            outline: none;
+            padding: 0 15px;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,0), 0 0 4px green;
+        }
+        label {
+            width: 110px;
+            color: #27bec6;
+            font-size:20px;
+        }
+        span {
+            width: 100px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div0">
+        <div id="div1" class="flexClass" style="">
+            <label>公司名称：</label>
+            <input type="text" id="txtCompanyName" style="" class="txtInput" />
+            <span></span>
+        </div>
+
+        <div id="div2" class="flexClass" style="">
+            <label>姓名：</label>
+            <input type="text" id="txtName" style="" class="txtInput" />
+            <span></span>
+        </div>
+
+        <div id="div3" class="flexClass" style="">
+            <label>电话：</label>
+            <input type="text" id="txtPhone" style="" class="txtInput" />
+            <button id="btnSend" style="width:100px;height:30px;border-radius:10px; outline:none;border:none; background-color:green; color:white; margin-left:5px;">发送</button>
+        </div>
+
+        <div id="div4" class="flexClass">
+            <label>验证码：</label>
+            <input type="text" id="txtValiCode" style="" class="txtInput" />
+            <span></span>
+        </div>
+
+        <div id="div5" class="flexClass">
+            <label>推荐人：</label>
+            <input type="text" id="txtRecommender" style="" class="txtInput" />
+            <span></span>
+        </div>
+        <div id="div6" class="flexClass" style="border:none; margin-top:50px;">
+            <button id="btnSubmit" style="width:100px;height:35px;border-radius:6px; outline:none;border:none; background-color:green; color:white;">保存</button>
+        </div>
+    </div>
+    
+</body>
+</html>

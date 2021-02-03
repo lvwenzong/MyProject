@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="B2BERP_YC4Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“B2BERP_YC4.dbo.ANL000T”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ANL000T">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="FUNC_NAME" />
+      <PropertyRef Name="MENU_GROUP" />
+      <PropertyRef Name="MENU_SORT" />
+      <PropertyRef Name="USE_YN" />
+      <PropertyRef Name="PARENT_MENU_ID" />
+      <PropertyRef Name="CREATED_OPERATOR" />
+      <PropertyRef Name="CREATED_DATE" />
+      <PropertyRef Name="UPDATED_OPERATOR" />
+      <PropertyRef Name="UPDATED_DATE" />
+    </Key>
+    <Property Name="ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FUNC_NAME" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="FUNC_URL" Type="varchar" MaxLength="200" />
+    <Property Name="ICON_URL" Type="varchar" MaxLength="200" />
+    <Property Name="MENU_GROUP" Type="smallint" Nullable="false" />
+    <Property Name="MENU_SORT" Type="smallint" Nullable="false" />
+    <Property Name="USE_YN" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="PARENT_MENU_ID" Type="smallint" Nullable="false" />
+    <Property Name="CREATED_OPERATOR" Type="int" Nullable="false" />
+    <Property Name="CREATED_DATE" Type="datetime" Nullable="false" />
+    <Property Name="UPDATED_OPERATOR" Type="int" Nullable="false" />
+    <Property Name="UPDATED_DATE" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“B2BERP_YC4.dbo.ANL101T”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ANL101T">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="USER_LOGIN" />
+      <PropertyRef Name="USER_PASSWORD" />
+      <PropertyRef Name="USER_NAME" />
+      <PropertyRef Name="USE_TYPE" />
+      <PropertyRef Name="LOGINED" />
+      <PropertyRef Name="LOCKED" />
+      <PropertyRef Name="CREATED_OPERATOR" />
+      <PropertyRef Name="CREATED_DATE" />
+      <PropertyRef Name="UPDATED_OPERATOR" />
+      <PropertyRef Name="UPDATED_DATE" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USER_LOGIN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USER_PASSWORD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USER_NAME" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DEPARTMENT" Type="nvarchar" MaxLength="10" />
+    <Property Name="USE_TYPE" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ROLE_ID" Type="smallint" />
+    <Property Name="LOGINED" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="LAST_LOGIN_DATE" Type="datetime" />
+    <Property Name="BINDING_CUSTOM_CODE" Type="varchar" MaxLength="16" />
+    <Property Name="LOCKED" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CREATED_OPERATOR" Type="int" Nullable="false" />
+    <Property Name="CREATED_DATE" Type="datetime" Nullable="false" />
+    <Property Name="UPDATED_OPERATOR" Type="int" Nullable="false" />
+    <Property Name="UPDATED_DATE" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“B2BERP_YC4.dbo.ANL102T”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ANL102T">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ROLE_NAME" />
+      <PropertyRef Name="CREATED_OPERATOR" />
+      <PropertyRef Name="CREATED_DATE" />
+      <PropertyRef Name="UPDATED_OPERATOR" />
+      <PropertyRef Name="UPDATED_DATE" />
+    </Key>
+    <Property Name="ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ROLE_NAME" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CREATED_OPERATOR" Type="int" Nullable="false" />
+    <Property Name="CREATED_DATE" Type="datetime" Nullable="false" />
+    <Property Name="UPDATED_OPERATOR" Type="int" Nullable="false" />
+    <Property Name="UPDATED_DATE" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“B2BERP_YC4.dbo.ANL201T”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ANL201T">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="FUNC_ID" />
+      <PropertyRef Name="PREVILEDGE" />
+      <PropertyRef Name="CREATED_OPERATOR" />
+      <PropertyRef Name="CREATED_DATE" />
+      <PropertyRef Name="UPDATED_OPERATOR" />
+      <PropertyRef Name="UPDATED_DATE" />
+    </Key>
+    <Property Name="USER_ID" Type="int" Nullable="false" />
+    <Property Name="FUNC_ID" Type="smallint" Nullable="false" />
+    <Property Name="PREVILEDGE" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="CREATED_OPERATOR" Type="int" Nullable="false" />
+    <Property Name="CREATED_DATE" Type="datetime" Nullable="false" />
+    <Property Name="UPDATED_OPERATOR" Type="int" Nullable="false" />
+    <Property Name="UPDATED_DATE" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“B2BERP_YC4.dbo.ANL202T”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ANL202T">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="FUNC_ID" />
+      <PropertyRef Name="PREVILEDGE" />
+      <PropertyRef Name="CREATED_OPERATOR" />
+      <PropertyRef Name="CREATED_DATE" />
+      <PropertyRef Name="UPDATED_OPERATOR" />
+      <PropertyRef Name="UPDATED_DATE" />
+    </Key>
+    <Property Name="ID" Type="smallint" Nullable="false" />
+    <Property Name="FUNC_ID" Type="smallint" Nullable="false" />
+    <Property Name="PREVILEDGE" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="CREATED_OPERATOR" Type="int" Nullable="false" />
+    <Property Name="CREATED_DATE" Type="datetime" Nullable="false" />
+    <Property Name="UPDATED_OPERATOR" Type="int" Nullable="false" />
+    <Property Name="UPDATED_DATE" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BCM100T">
+    <Key>
+      <PropertyRef Name="CUSTOM_CODE" />
+    </Key>
+    <Property Name="CUSTOM_CODE" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="CUSTOM_TYPE" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="CUSTOM_FULL_NAME" Type="nvarchar" MaxLength="100" />
+    <Property Name="CUSTOM_NAME" Type="nvarchar" MaxLength="100" />
+    <Property Name="CUSTOM_FOR_NAME" Type="nvarchar" MaxLength="100" />
+    <Property Name="NATION_CODE" Type="nvarchar" MaxLength="3" />
+    <Property Name="COMPANY_NUM" Type="nvarchar" MaxLength="18" />
+    <Property Name="TOP_NUM" Type="nvarchar" MaxLength="18" />
+    <Property Name="TOP_NAME" Type="nvarchar" MaxLength="20" />
+    <Property Name="BUSINESS_TYPE" Type="nvarchar" MaxLength="1" />
+    <Property Name="USE_YN" Type="nvarchar" MaxLength="1" />
+    <Property Name="CUSTOM_LEV1" Type="nvarchar" MaxLength="3" />
+    <Property Name="CUSTOM_LEV2" Type="nvarchar" MaxLength="3" />
+    <Property Name="CUSTOM_LEV3" Type="nvarchar" MaxLength="3" />
+    <Property Name="COMP_CLASS" Type="nvarchar" MaxLength="20" />
+    <Property Name="COMP_TYPE" Type="nvarchar" MaxLength="20" />
+    <Property Name="ZIP_CODE" Type="nvarchar" MaxLength="6" />
+    <Property Name="KOR_ADDR" Type="nvarchar" MaxLength="60" />
+    <Property Name="KOR_ADDR_DETAIL" Type="nvarchar" MaxLength="100" />
+    <Property Name="FOR_ADDR" Type="nvarchar" MaxLength="100" />
+    <Property Name="TELEPHON" Type="nvarchar" MaxLength="20" />
+    <Property Name="FAX_NUM" Type="nvarchar" MaxLength="20" />
+    <Property Name="MAIL_ID" Type="nvarchar" MaxLength="30" />
+    <Property Name="WON_CALC_BAS" Type="nvarchar" MaxLength="1" />
+    <Property Name="PRODT_ITEM" Type="nvarchar" MaxLength="40" />
+    <Property Name="START_DATE" Type="nvarchar" MaxLength="8" />
+    <Property Name="STOP_DATE" Type="nvarchar" MaxLength="8" />
+    <Property Name="TO_ADDRESS" Type="nvarchar" MaxLength="50" />
+    <Property Name="TAX_CALC_TYPE" Type="nvarchar" MaxLength="1" />
+    <Property Name="COMP_PRSN" Type="nvarchar" MaxLength="2" />
+    <Property Name="BUSI_PRSN" Type="nvarchar" MaxLength="20" />
+    <Property Name="ZIP_NAME" Type="nvarchar" MaxLength="100" />
+    <Property Name="CREDIT_YN" Type="nvarchar" MaxLength="1" />
+    <Property Name="CUSTOM_ORDER_NAME" Type="nvarchar" MaxLength="100" />
+    <Property Name="CUSTOM_ORDER_MAIL" Type="nvarchar" MaxLength="100" />
+    <Property Name="CUSTOM_GROUP" Type="nvarchar" MaxLength="10" />
+    <Property Name="BANK_NM" Type="nvarchar" MaxLength="2" />
+    <Property Name="ACCNT_NUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="BANK_CUSTOM" Type="nvarchar" MaxLength="50" />
+    <Property Name="CUSTOM_ORDER_TEL" Type="nvarchar" MaxLength="1000" />
+    <Property Name="PATMENT_MOD" Type="nvarchar" MaxLength="2" />
+    <Property Name="PATMENT_PRE" Type="nvarchar" MaxLength="3" />
+    <Property Name="DIV_CODE" Type="nvarchar" MaxLength="16" />
+    <Property Name="DEPT_CODE" Type="nvarchar" MaxLength="7" />
+    <Property Name="SHOP_CODE" Type="nvarchar" MaxLength="8" />
+    <Property Name="WL_CODE" Type="nvarchar" MaxLength="8" />
+    <Property Name="PL_VENDOR" Type="nvarchar" MaxLength="50" />
+    <Property Name="WL_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="SALE_COMP" Type="nvarchar" MaxLength="50" />
+    <Property Name="SALE_PLANT" Type="nvarchar" MaxLength="50" />
+    <Property Name="STORAGE_LOCATION" Type="nvarchar" MaxLength="50" />
+    <Property Name="TC_CODE" Type="nvarchar" MaxLength="8" />
+    <Property Name="TC_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="ROU_CODE" Type="nvarchar" MaxLength="9" />
+    <Property Name="ROU_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="ZIP_HCODE" Type="nvarchar" MaxLength="6" />
+    <Property Name="ZIP_HNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="ZIP_PCODE" Type="nvarchar" MaxLength="6" />
+    <Property Name="ZIP_PNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="SPEC_REMK" Type="nvarchar" MaxLength="100" />
+    <Property Name="CSM_NAME" Type="nvarchar" MaxLength="20" />
+    <Property Name="DRIVER_NAME" Type="nvarchar" MaxLength="20" />
+    <Property Name="CUST_SCOR" Type="nvarchar" MaxLength="50" />
+    <Property Name="MOBILEPHO" Type="nvarchar" MaxLength="20" />
+    <Property Name="MALL_DOMAIN" Type="nvarchar" MaxLength="50" />
+    <Property Name="PARENT_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="PARENT_MALL_DOMAIN" Type="nvarchar" MaxLength="50" />
+    <Property Name="SESSION_ID" Type="nvarchar" MaxLength="50" />
+    <Property Name="NICK_NAME" Type="nvarchar" MaxLength="100" />
+    <Property Name="MATCHING_FLAG" Type="nchar" MaxLength="1" />
+    <Property Name="STRUC_LV" Type="int" />
+    <Property Name="MATCHING_SEQ" Type="int" />
+    <Property Name="CUSTOM_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="CUSTOM_PW" Type="nvarchar" MaxLength="20" />
+    <Property Name="SEX_CODE" Type="char" MaxLength="5" />
+    <Property Name="IMG_PATH" Type="nvarchar" MaxLength="255" />
+    <Property Name="RECOM_CODE" Type="nvarchar" MaxLength="16" />
+    <Property Name="RECOM_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="REMARK" Type="nvarchar" MaxLength="100" />
+    <Property Name="REMARK1" Type="nvarchar" MaxLength="100" />
+    <Property Name="ETAXBILL_BANK_NUM" Type="nvarchar" MaxLength="22" />
+    <Property Name="BROKERAGE" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="TOP_ZIP_CODE" Type="nvarchar" MaxLength="6" />
+    <Property Name="TOP_ADDR_HEAD" Type="nvarchar" MaxLength="60" />
+    <Property Name="TOP_ADDR_DETAIL" Type="nvarchar" MaxLength="100" />
+    <Property Name="WX_ID" Type="varchar" MaxLength="40" />
+    <Property Name="WX_NICK_NAME" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="BPR000T">
+    <Key>
+      <PropertyRef Name="TYPE" />
+      <PropertyRef Name="LEVEL1" />
+      <PropertyRef Name="LEVEL2" />
+      <PropertyRef Name="LEVEL3" />
+      <PropertyRef Name="LEVEL4" />
+      <PropertyRef Name="LEVEL5" />
+    </Key>
+    <Property Name="TYPE" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="LEVEL1" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="LEVEL2" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="LEVEL3" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="LEVEL4" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="LEVEL5" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="APP_TYPE" Type="nvarchar" MaxLength="30" />
+    <Property Name="LEVEL_NAME" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IMAGE_URL" Type="nvarchar" MaxLength="255" />
+    <Property Name="RANK" Type="nvarchar" MaxLength="5" />
+    <Property Name="VERSION" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="BPR100T">
+    <Key>
+      <PropertyRef Name="ITEM_CODE" />
+    </Key>
+    <Property Name="ITEM_CODE" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ITEM_NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="SPEC" Type="nvarchar" MaxLength="255" />
+    <Property Name="ITEM_LEVEL1" Type="nvarchar" MaxLength="5" />
+    <Property Name="ITEM_LEVEL2" Type="nvarchar" MaxLength="5" />
+    <Property Name="ITEM_LEVEL3" Type="nvarchar" MaxLength="5" />
+    <Property Name="ITEM_LEVEL4" Type="nvarchar" MaxLength="5" />
+    <Property Name="ITEM_LEVEL5" Type="nvarchar" MaxLength="5" />
+    <Property Name="STOCK_UNIT" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="ORDER_UNIT" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="TRNS_RATE" Type="numeric" Precision="12" Scale="6" />
+    <Property Name="PIC_FLAG" Type="nvarchar" MaxLength="1" />
+    <Property Name="SPEC_NUM" Type="nvarchar" MaxLength="20" />
+    <Property Name="AGREE_DATE" Type="nvarchar" MaxLength="8" />
+    <Property Name="USE_YN" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="ITEM_ACCOUNT" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="ABC_FLAG" Type="nvarchar" MaxLength="1" />
+    <Property Name="DOM_FORIGN" Type="nvarchar" MaxLength="1" />
+    <Property Name="SUPPLY_TYPE" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="STOCK_CONT_YN" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="BF_YN" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAFE_STOCK_Q" Type="numeric" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="BOX_Q" Type="numeric" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="PURCH_LDTIME" Type="numeric" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="MAKE_LDTIME" Type="numeric" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="STD_TIME_UNIT" Type="numeric" Precision="9" Scale="3" />
+    <Property Name="BASIS_P" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="INSP_TYPE" Type="nvarchar" MaxLength="1" />
+    <Property Name="WORK_SHOP_CODE" Type="nvarchar" MaxLength="8" />
+    <Property Name="WH_CODE" Type="nvarchar" MaxLength="8" />
+    <Property Name="PURCH_MAN" Type="nvarchar" MaxLength="2" />
+    <Property Name="INSP_PRSN" Type="nvarchar" MaxLength="2" />
+    <Property Name="INOUT_PRSN" Type="nvarchar" MaxLength="2" />
+    <Property Name="HS_NO" Type="nvarchar" MaxLength="20" />
+    <Property Name="HS_NM" Type="nvarchar" MaxLength="50" />
+    <Property Name="HS_SPEC" Type="nvarchar" MaxLength="50" />
+    <Property Name="HS_UNIT" Type="nvarchar" MaxLength="3" />
+    <Property Name="FIX_RATE" Type="numeric" Precision="5" Scale="0" />
+    <Property Name="WEIGHT" Type="numeric" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="VOLUME" Type="numeric" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="CHARGE_TYPE" Type="nvarchar" MaxLength="1" />
+    <Property Name="UNIT_LDTIME" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="INSP_LDTIME" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="LOT_METHOD" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="MAX_Q" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="MIN_Q" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="FIX_Q" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="ROUND_Q" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="PERIOD_METHOD" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="ROUND_DAY" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="DATE_UNIT" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="INTEGER_YN" Type="nvarchar" MaxLength="1" />
+    <Property Name="ORDER_YN" Type="nvarchar" MaxLength="1" />
+    <Property Name="EXPLOSION_YN" Type="nvarchar" MaxLength="1" />
+    <Property Name="PHANTOM_YN" Type="nvarchar" MaxLength="1" />
+    <Property Name="TY_BAD_RATE" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="TY_EA_PER_SHEET" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="TY_LOT_Q" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="TY_REORDER" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="TY_STD_PAGE" Type="nvarchar" MaxLength="5" />
+    <Property Name="TY_CUSTOM_TYPE" Type="nvarchar" MaxLength="2" />
+    <Property Name="DIV_CODE" Type="nvarchar" MaxLength="20" />
+    <Property Name="DIV_NAME" Type="nvarchar" MaxLength="40" />
+    <Property Name="MATERIAL_GROUP" Type="nvarchar" MaxLength="50" />
+    <Property Name="WEIGHT_CODE" Type="nvarchar" MaxLength="10" />
+    <Property Name="VOLUMN_CODE" Type="nvarchar" MaxLength="10" />
+    <Property Name="HSIZE" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="AREA" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="LB_DISTIN" Type="nvarchar" MaxLength="40" />
+    <Property Name="GOODS_GROUP" Type="nvarchar" MaxLength="40" />
+    <Property Name="UN_AREA" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="EQUIP_LT" Type="nvarchar" MaxLength="40" />
+    <Property Name="ITEM_LENGTH" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ITEM_WIDE" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ITEM_HEIGHT" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="DIM_UNIT" Type="nvarchar" MaxLength="20" />
+    <Property Name="UN_AREA_UNIT" Type="nvarchar" MaxLength="20" />
+    <Property Name="EQUIP_LT_UNIT" Type="nvarchar" MaxLength="20" />
+    <Property Name="BASIS_DELIVERY_O" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ITEM_NICKNAME" Type="nvarchar" MaxLength="250" />
+    <Property Name="BASIC_DELIVERY_P" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="BRAND" Type="nvarchar" MaxLength="10" />
+    <Property Name="BARCODE1" Type="nvarchar" MaxLength="50" />
+    <Property Name="BARCODE2" Type="nvarchar" MaxLength="50" />
+    <Property Name="BARCODE3" Type="nvarchar" MaxLength="50" />
+    <Property Name="BARCODE4" Type="nvarchar" MaxLength="50" />
+    <Property Name="APP_TYPE1" Type="nvarchar" MaxLength="3" />
+    <Property Name="MARKET_P" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="APP_TYPE2" Type="nvarchar" MaxLength="3" />
+    <Property Name="APP_TYPE3" Type="nvarchar" MaxLength="3" />
+    <Property Name="APP_TYPE4" Type="nvarchar" MaxLength="3" />
+    <Property Name="APP_TYPE5" Type="nvarchar" MaxLength="3" />
+    <Property Name="APP_TYPE6" Type="nvarchar" MaxLength="3" />
+    <Property Name="WEIGH_YN" Type="nvarchar" MaxLength="1" />
+    <Property Name="WEIGH_TYPE" Type="nvarchar" MaxLength="2" />
+    <Property Name="RANGE_LMT_YN" Type="nvarchar" MaxLength="1" />
+    <Property Name="ORIGINAL_NATION" Type="nvarchar" MaxLength="3" />
+    <Property Name="SHOPCODE_YN" Type="nvarchar" MaxLength="1" />
+    <Property Name="EXPIRATION_DATE" Type="numeric" Precision="5" Scale="0" />
+    <Property Name="EXPIRATION_UNIT" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="BSA100T">
+    <Key>
+      <PropertyRef Name="MAIN_CODE" />
+      <PropertyRef Name="SUB_CODE" />
+    </Key>
+    <Property Name="MAIN_CODE" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="SUB_CODE" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CODE_NAME" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="SYSTEM_CODE_YN" Type="numeric" Precision="1" Scale="0" />
+    <Property Name="REF_CODE1" Type="nvarchar" MaxLength="50" />
+    <Property Name="REF_CODE2" Type="nvarchar" MaxLength="50" />
+    <Property Name="REF_CODE3" Type="nvarchar" MaxLength="50" />
+    <Property Name="SUB_LENGTH" Type="numeric" Precision="2" Scale="0" />
+    <Property Name="REMARK" Type="ntext" />
+    <Property Name="USER_YN" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="BSA510T">
+    <Key>
+      <PropertyRef Name="DIV_CODE" />
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="CHILD_USER_ID" />
+    </Key>
+    <Property Name="DIV_CODE" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="USER_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CHILD_USER_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="SEQ" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="REMARK" Type="nvarchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="HPA301T_CQ">
+    <Key>
+      <PropertyRef Name="PAY_YYYYMM" />
+      <PropertyRef Name="SUPP_TYPE" />
+      <PropertyRef Name="CUSTOM_CODE" />
+    </Key>
+    <Property Name="PAY_YYYYMM" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="SUPP_TYPE" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="CUSTOM_CODE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SUPP_RATE" Type="numeric" Precision="7" Scale="3" Nullable="false" />
+    <Property Name="AMOUNT_I" Type="numeric" Precision="18" Scale="4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HPA601T_CQ">
+    <Key>
+      <PropertyRef Name="PAY_YYYYMM" />
+      <PropertyRef Name="CUSTOM_CODE" />
+    </Key>
+    <Property Name="PAY_YYYYMM" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="CUSTOM_CODE" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="CUSTOM_TYPE" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="BASE_DATE" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="SUPP_DATE" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="CALC_DATE" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="PAY_PROV_FLAG" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="SALE_STD_I" Type="numeric" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="BONUS_STD_I" Type="numeric" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="SPEC_BONUS_STD_I" Type="numeric" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="SUPP_RATE" Type="numeric" Precision="7" Scale="3" Nullable="false" />
+    <Property Name="SUPP_TOTAL_I" Type="numeric" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="REAL_AMOUNT_I" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="DEFI_YN" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="SOF100T">
+    <Key>
+      <PropertyRef Name="ORDER_NUM" />
+    </Key>
+    <Property Name="ORDER_NUM" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DIV_CODE" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="CUSTOM_CODE" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="ONLINE_ORDER_STATUS" Type="nvarchar" MaxLength="2" />
+    <Property Name="ORDER_DATE" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="EXPORT_YN" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="ORDER_TYPE" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="MONEY_UNIT" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="ORDER_O" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="DEPOSIT_O" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="EXCHG_RATE_O" Type="numeric" Precision="8" Scale="4" Nullable="false" />
+    <Property Name="REMARK" Type="nvarchar" MaxLength="500" />
+    <Property Name="BILL_TYPE" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="CREATE_FLAG" Type="nvarchar" MaxLength="1" />
+    <Property Name="CHANGE_SER_NO" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="TY_ORDER_TYPE" Type="nvarchar" MaxLength="2" />
+    <Property Name="CREATE_DATE" Type="datetime" />
+    <Property Name="CREATE_TIME" Type="nvarchar" MaxLength="6" />
+    <Property Name="INVALID_DATE" Type="datetime" />
+    <Property Name="EXPRESS_O" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AUTH_NO" Type="nvarchar" MaxLength="20" />
+    <Property Name="POINT_AUTH_NO" Type="nvarchar" MaxLength="8" />
+    <Property Name="POINT_AMOUNT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="POINT_RATE" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="COUPONS_ID" Type="nvarchar" MaxLength="50" />
+    <Property Name="REAL_AMOUNT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DELIVERY_ID" Type="int" />
+    <Property Name="PAYMENT_STATUS" Type="int" Nullable="false" />
+    <Property Name="EXPRESS_STATUS" Type="int" />
+    <Property Name="ASSESS_STATUS" Type="int" />
+    <Property Name="COUPONS_AMOUNT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PLATFORMCOUPONS_AMOUNT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DETAIL" Type="nvarchar" MaxLength="4000" />
+    <Property Name="SYNC_PAYMENT_STATUS" Type="int" />
+    <Property Name="APP_TYPE" Type="nvarchar" MaxLength="3" />
+    <Property Name="DELIVERY_NAME" Type="nvarchar" MaxLength="100" />
+    <Property Name="TO_ADDRESS" Type="nvarchar" MaxLength="100" />
+    <Property Name="MOBILEPHO" Type="nvarchar" MaxLength="20" />
+    <Property Name="ZIP_CODE" Type="nvarchar" MaxLength="6" />
+    <Property Name="DELETED" Type="int" />
+    <Property Name="CANCLE_DATE" Type="nvarchar" MaxLength="8" />
+    <Property Name="CANCLE_TIME" Type="nvarchar" MaxLength="6" />
+    <Property Name="HT_ORDER_STATUS" Type="nvarchar" MaxLength="2" />
+    <Property Name="ORDER_STATUS" Type="nvarchar" MaxLength="2" />
+    <Property Name="DiscountAmount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="IntegralDiscount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="FullDiscount" Type="numeric" Precision="18" Scale="4" />
+  </EntityType>
+  <EntityType Name="SOF110T">
+    <Key>
+      <PropertyRef Name="ORDER_NUM" />
+      <PropertyRef Name="SER_NO" />
+    </Key>
+    <Property Name="ORDER_NUM" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="SER_NO" Type="numeric" Precision="20" Scale="0" Nullable="false" />
+    <Property Name="DIV_CODE" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="TREE_CODE" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="ITEM_CODE" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DVRY_DATE" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="ORDER_Q" Type="numeric" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ORDER_P" Type="numeric" Precision="16" Scale="4" Nullable="false" />
+    <Property Name="OTHER_O" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="ORDER_O" Type="numeric" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="DEPOSIT_O" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="ORDER_STATUS" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="OUTSTOCK_Q" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="RETURN_Q" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="SALE_Q" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="PRODT_END_DATE" Type="nvarchar" MaxLength="8" />
+    <Property Name="LC_NUM" Type="nvarchar" MaxLength="20" />
+    <Property Name="PO_NUM" Type="nvarchar" MaxLength="30" />
+    <Property Name="PO_SEQ" Type="numeric" Precision="4" Scale="0" />
+    <Property Name="WK_PLAN_NUM" Type="nvarchar" MaxLength="20" />
+    <Property Name="PLAN_STATUS" Type="nvarchar" MaxLength="1" />
+    <Property Name="PLAN_Q" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="OUTSTOCK_CUSTOM_CODE" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="FORECAST_SEQ" Type="nvarchar" MaxLength="15" />
+    <Property Name="SALE_CUSTOM_CODE" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="ORDER_PRSN" Type="nvarchar" MaxLength="2" />
+    <Property Name="ORDER_DEPT_CODE" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="RECEIPT_TYPE" Type="nvarchar" MaxLength="3" />
+    <Property Name="PO_FORECAST_SEQ" Type="numeric" Precision="14" Scale="0" />
+    <Property Name="REMARK" Type="nvarchar" MaxLength="500" />
+    <Property Name="OUTREQ_Q" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="TY_ORDER_TYPE" Type="nvarchar" MaxLength="1" />
+    <Property Name="PROCESS_TYPE" Type="nvarchar" MaxLength="2" />
+    <Property Name="DELIVERY_NUM" Type="nvarchar" MaxLength="20" />
+    <Property Name="order_p_tmp" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="create_date" Type="nvarchar" MaxLength="8" />
+    <Property Name="create_time" Type="nvarchar" MaxLength="6" />
+    <Property Name="PCAR_STATUS" Type="nvarchar" MaxLength="2" />
+    <Property Name="TR_ZONE_CODE" Type="nvarchar" MaxLength="50" />
+    <Property Name="VOLUME" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="SO_DATE" Type="nvarchar" MaxLength="10" />
+    <Property Name="SO_TIME" Type="nvarchar" MaxLength="10" />
+    <Property Name="WOUT_DATE" Type="nvarchar" MaxLength="10" />
+    <Property Name="CUST_WDATE" Type="nvarchar" MaxLength="10" />
+    <Property Name="order_type" Type="nvarchar" MaxLength="2" />
+    <Property Name="DO_CNT" Type="nvarchar" MaxLength="6" />
+    <Property Name="SO_CNT" Type="nvarchar" MaxLength="6" />
+    <Property Name="SALE_COMP" Type="nvarchar" MaxLength="50" />
+    <Property Name="SALE_PLANT" Type="nvarchar" MaxLength="50" />
+    <Property Name="STORAGE_LOCATION" Type="nvarchar" MaxLength="50" />
+    <Property Name="ITEM_GRD" Type="nvarchar" MaxLength="10" />
+    <Property Name="REFUND_STATUS" Type="int" />
+    <Property Name="EXPRESS_STATUS" Type="nvarchar" MaxLength="3" />
+    <Property Name="DELIVERY_NAME" Type="nvarchar" MaxLength="100" />
+    <Property Name="TO_ADDRESS" Type="nvarchar" MaxLength="100" />
+    <Property Name="MOBILEPHO" Type="nvarchar" MaxLength="20" />
+    <Property Name="ENTER_SHOP_CODE" Type="nvarchar" MaxLength="16" />
+    <Property Name="SUB_ASSESS_STATUS" Type="int" />
+    <Property Name="ORDER_PRE_O" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="POINT_O" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="COUPON_NUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="COUPON_O" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="DELIVERY_O" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="REFEREE_CUSTOM_CODE" Type="nvarchar" MaxLength="16" />
+    <Property Name="EnabledRefundIntegral" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="CouponDiscount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="FullDiscount" Type="numeric" Precision="18" Scale="4" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“B2BERP_YC4.dbo.TB_LOG”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="TB_LOG">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="CREATE_DATE" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USER_ID" Type="int" Nullable="false" />
+    <Property Name="OPERATION" Type="nvarchar" MaxLength="100" />
+    <Property Name="METHOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="PARAMS" Type="nvarchar" MaxLength="500" />
+    <Property Name="IP" Type="varchar" MaxLength="50" />
+    <Property Name="CREATE_DATE" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" />
+    <Property Name="Sex" Type="bit" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="Enable" Type="bit" />
+    <Property Name="Compang" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="B2BERP_YC4ModelStoreContainer">
+    <EntitySet Name="BCM100T" EntityType="Self.BCM100T" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BPR000T" EntityType="Self.BPR000T" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BPR100T" EntityType="Self.BPR100T" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BSA100T" EntityType="Self.BSA100T" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BSA510T" EntityType="Self.BSA510T" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HPA301T_CQ" EntityType="Self.HPA301T_CQ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HPA601T_CQ" EntityType="Self.HPA601T_CQ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SOF100T" EntityType="Self.SOF100T" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SOF110T" EntityType="Self.SOF110T" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ANL000T" EntityType="Self.ANL000T" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ANL000T].[ID] AS [ID], 
+    [ANL000T].[FUNC_NAME] AS [FUNC_NAME], 
+    [ANL000T].[FUNC_URL] AS [FUNC_URL], 
+    [ANL000T].[ICON_URL] AS [ICON_URL], 
+    [ANL000T].[MENU_GROUP] AS [MENU_GROUP], 
+    [ANL000T].[MENU_SORT] AS [MENU_SORT], 
+    [ANL000T].[USE_YN] AS [USE_YN], 
+    [ANL000T].[PARENT_MENU_ID] AS [PARENT_MENU_ID], 
+    [ANL000T].[CREATED_OPERATOR] AS [CREATED_OPERATOR], 
+    [ANL000T].[CREATED_DATE] AS [CREATED_DATE], 
+    [ANL000T].[UPDATED_OPERATOR] AS [UPDATED_OPERATOR], 
+    [ANL000T].[UPDATED_DATE] AS [UPDATED_DATE]
+    FROM [dbo].[ANL000T] AS [ANL000T]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ANL101T" EntityType="Self.ANL101T" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ANL101T].[ID] AS [ID], 
+    [ANL101T].[USER_LOGIN] AS [USER_LOGIN], 
+    [ANL101T].[USER_PASSWORD] AS [USER_PASSWORD], 
+    [ANL101T].[USER_NAME] AS [USER_NAME], 
+    [ANL101T].[DEPARTMENT] AS [DEPARTMENT], 
+    [ANL101T].[USE_TYPE] AS [USE_TYPE], 
+    [ANL101T].[ROLE_ID] AS [ROLE_ID], 
+    [ANL101T].[LOGINED] AS [LOGINED], 
+    [ANL101T].[LAST_LOGIN_DATE] AS [LAST_LOGIN_DATE], 
+    [ANL101T].[BINDING_CUSTOM_CODE] AS [BINDING_CUSTOM_CODE], 
+    [ANL101T].[LOCKED] AS [LOCKED], 
+    [ANL101T].[CREATED_OPERATOR] AS [CREATED_OPERATOR], 
+    [ANL101T].[CREATED_DATE] AS [CREATED_DATE], 
+    [ANL101T].[UPDATED_OPERATOR] AS [UPDATED_OPERATOR], 
+    [ANL101T].[UPDATED_DATE] AS [UPDATED_DATE]
+    FROM [dbo].[ANL101T] AS [ANL101T]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ANL102T" EntityType="Self.ANL102T" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ANL102T].[ID] AS [ID], 
+    [ANL102T].[ROLE_NAME] AS [ROLE_NAME], 
+    [ANL102T].[CREATED_OPERATOR] AS [CREATED_OPERATOR], 
+    [ANL102T].[CREATED_DATE] AS [CREATED_DATE], 
+    [ANL102T].[UPDATED_OPERATOR] AS [UPDATED_OPERATOR], 
+    [ANL102T].[UPDATED_DATE] AS [UPDATED_DATE]
+    FROM [dbo].[ANL102T] AS [ANL102T]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ANL201T" EntityType="Self.ANL201T" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ANL201T].[USER_ID] AS [USER_ID], 
+    [ANL201T].[FUNC_ID] AS [FUNC_ID], 
+    [ANL201T].[PREVILEDGE] AS [PREVILEDGE], 
+    [ANL201T].[CREATED_OPERATOR] AS [CREATED_OPERATOR], 
+    [ANL201T].[CREATED_DATE] AS [CREATED_DATE], 
+    [ANL201T].[UPDATED_OPERATOR] AS [UPDATED_OPERATOR], 
+    [ANL201T].[UPDATED_DATE] AS [UPDATED_DATE]
+    FROM [dbo].[ANL201T] AS [ANL201T]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ANL202T" EntityType="Self.ANL202T" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ANL202T].[ID] AS [ID], 
+    [ANL202T].[FUNC_ID] AS [FUNC_ID], 
+    [ANL202T].[PREVILEDGE] AS [PREVILEDGE], 
+    [ANL202T].[CREATED_OPERATOR] AS [CREATED_OPERATOR], 
+    [ANL202T].[CREATED_DATE] AS [CREATED_DATE], 
+    [ANL202T].[UPDATED_OPERATOR] AS [UPDATED_OPERATOR], 
+    [ANL202T].[UPDATED_DATE] AS [UPDATED_DATE]
+    FROM [dbo].[ANL202T] AS [ANL202T]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TB_LOG" EntityType="Self.TB_LOG" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TB_LOG].[ID] AS [ID], 
+    [TB_LOG].[USER_ID] AS [USER_ID], 
+    [TB_LOG].[OPERATION] AS [OPERATION], 
+    [TB_LOG].[METHOD] AS [METHOD], 
+    [TB_LOG].[PARAMS] AS [PARAMS], 
+    [TB_LOG].[IP] AS [IP], 
+    [TB_LOG].[CREATE_DATE] AS [CREATE_DATE]
+    FROM [dbo].[TB_LOG] AS [TB_LOG]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

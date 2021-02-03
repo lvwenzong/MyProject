@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+  
+
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    
+
+    <script type="text/javascript">
+
+        //同步坐标
+        function synchronizationCoordinate() {
+            var address = $("#txtAddress").val();
+
+            var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&sensor=false" + "&key=AIzaSyDJW4jsPlNKgv6jFm3B5Edp5ywgdqLWdmc";
+
+            let newURL2 = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=1600+Amphitheatre&key=AIzaSyA-CUWBYOIgYG3gNUDFV8shvJCN8iZ-gG4";
+
+            let newURL4 = "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?key=AIzaSyA-CUWBYOIgYG3gNUDFV8shvJCN8iZ-gG4&input=pizza";
+
+          
+           
+            $.ajax({
+                async: false,
+                url: newURL4,
+                dataType: 'json',
+                type: "get",
+                contentType:"application/json",
+                success: function (data) {
+                    console.log(data);
+                    if (data.status == 'OK') {
+                        //经度
+                        var jingdu = data.results[0].geometry.location.lng;
+                        //纬度
+                        var weidu = data.results[0].geometry.location.lat;
+                        $("#resultHTML").html("经度：" + jingdu + "纬度：" + weidu);
+                    }
+                    else {
+                        alert("没找到你要查询的位置，请重新输入！");
+                    }
+                },
+                error: function () {
+                    alert("网络繁忙，请重试！");
+                }
+            });
+        }
+       
+    </script>
+</head>
+<body>
+    <input type="text" width="400" id="txtAddress" value="上海市万象城餐馆"  />
+    <input type="button" value="查找数据" onclick="synchronizationCoordinate();" />
+    <div id="resultHTML">
+
+    </div>
+</body>
+</html>
